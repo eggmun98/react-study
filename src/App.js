@@ -4,6 +4,7 @@ import About from "./about";
 import ClassPage from "./class";
 import Lifecycle from "./lifecycle";
 import Sass from "./sass";
+import "./exercise";
 
 function App() {
   return (
