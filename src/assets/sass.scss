@@ -1,5 +1,20 @@
+$pColor: blue;
+$buttonColor: red;
+
 .SassStyle {
   h1 {
     color: red;
+  }
+
+  p {
+    color: $pColor;
+  }
+
+  button {
+    background-color: white;
+  }
+
+  button.a {
+    background-color: green;
   }
 }
