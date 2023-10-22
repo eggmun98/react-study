@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class ClassPage extends Component {
   // 클래스형 컴포넌트
@@ -28,6 +29,12 @@ export default class ClassPage extends Component {
     // setState는 비동기적으로 작동
   };
 
+  // 함수형 컴포넌트에서의 라우터
+  //   const navigate = useNavigate();
+  //   const handleClick = () => {
+  //     navigate("/about");  // /about 경로로 이동
+  //   };
+
   render() {
     return (
       <div>
@@ -36,6 +43,8 @@ export default class ClassPage extends Component {
         <div>{this.state.count}</div>
         <button onClick={this.onClickCountUp}>카운트 1만들기</button>
         <button onClick={this.onClickCountUp2}>카운트 1올리기</button>
+        <Link to="/">홈으로 가기</Link>
+        <button onClick={this.onClickMoveAbout}>About 페이지로 이동</button>
       </div>
     );
   }
